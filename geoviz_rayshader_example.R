@@ -94,3 +94,4 @@ add_gps_to_rayshader(
   zscale = 30,
   ground_shadow = TRUE
 )
+rayshader::render_snapshot('sample_out.png')
