@@ -21,8 +21,8 @@ mapbox_key <- Sys.getenv("mbox_key")
 run_raw <- plotKML::readGPX("good_friday_run.gpx", 
                             metadata = FALSE,
                             bounds = FALSE,
-                            routes = FALSE,
-)
+                            routes = FALSE)
+
 run_data <- run_raw$tracks[[1]]$`Morning Run` %>% 
   mutate(ele = as.numeric(ele))
 
